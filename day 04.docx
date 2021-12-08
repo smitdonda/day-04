@@ -1,6 +1,5 @@
 1.	How to compare two JSON have the same properties without order?
 
-
 var obj1 = { name: "Person 1", age:5 };
 var obj2 = { age:5, name: "Person 1" };
 
@@ -21,6 +20,10 @@ else {
     flag=false;
 }
 console.log("is object equal"+flag);
+
+output: 
+is object equal true
+
 
 2.	Use the rest countries API url -> https://restcountries.eu/rest/v2/all and display all the country flags in console
 
@@ -86,11 +89,16 @@ for (var i in countries){
 console.log(countries[i].flag)
 }
 
-
+output:
+https://www.britannica.com/topic/flag-of-Afghanistan
+https://en.wikipedia.org/wiki/File:Flag_of_India.svg
+https://en.wikipedia.org/wiki/File:Flag_of_Japan.svg
+https://www.britannica.com/topic/flag-of-China
+https://www.britannica.com/topic/flag-of-the-United-States-of-America
+https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg
 
 
 3.	Use the same rest countries and print all countries name, region, sub region and population
-
 
 var countries = [
  { 
@@ -156,5 +164,13 @@ console.log(countries[i].name,
             countries[i].subregion,
             countries[i].population )
 }
+
+output:
+Afghanistan Asia Southern Asia 3.89 corces
+India Asia & Pacific Southern Asia 137 corces
+Japan Asia Eastern Asia 12.58 corces
+China Asia Eastern Asia 140.21 corces
+United States of America Americas Northern America 32.95 corces
+France Europe Western Europe 6.74 crores
 
 
